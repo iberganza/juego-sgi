@@ -159,8 +159,6 @@ UnityEngine.AnimationCurve::Internal_Destroy
 UnityEngine.Application::Quit
 UnityEngine.AudioSettings::StartAudioOutput
 UnityEngine.AudioSettings::StopAudioOutput
-UnityEngine.Behaviour::get_enabled
-UnityEngine.Camera::get_stereoEnabled
 UnityEngine.Camera::GetAllCamerasCount
 UnityEngine.Camera::GetAllCamerasImpl
 UnityEngine.Camera::get_cullingMask
@@ -177,6 +175,8 @@ UnityEngine.Camera::get_clearFlags
 UnityEngine.Camera::get_targetTexture
 UnityEngine.CameraRaycastHelper::RaycastTry2D_Injected
 UnityEngine.CameraRaycastHelper::RaycastTry_Injected
+UnityEngine.CharacterController::get_isGrounded
+UnityEngine.CharacterController::Move_Injected
 UnityEngine.Collider::get_attachedRigidbody
 UnityEngine.Component::GetComponentFastPath
 UnityEngine.Component::get_gameObject
@@ -185,6 +185,7 @@ UnityEngine.ComputeShader::FindKernel
 UnityEngine.Coroutine::ReleaseCoroutine
 UnityEngine.Cubemap::Internal_CreateImpl
 UnityEngine.CubemapArray::Internal_CreateImpl
+UnityEngine.Cursor::set_lockState
 UnityEngine.Debug::ExtractStackTraceNoAlloc
 UnityEngine.DebugLogHandler::Internal_Log
 UnityEngine.DebugLogHandler::Internal_LogException
@@ -208,9 +209,12 @@ UnityEngine.Gradient::Internal_Equals
 UnityEngine.Gradient::Init
 UnityEngine.Gradient::Cleanup
 UnityEngine.Input::CheckDisabled
+UnityEngine.Input::GetButton
+UnityEngine.Input::GetButtonDown
 UnityEngine.Input::GetMouseButton
 UnityEngine.Input::GetMouseButtonDown
 UnityEngine.Input::get_touchCount
+UnityEngine.Input::GetAxis
 UnityEngine.Input::GetTouch_Injected
 UnityEngine.Input::get_mousePosition_Injected
 UnityEngine.IntegratedSubsystem::SetHandle
@@ -270,6 +274,8 @@ UnityEngine.PlayerConnectionInternal::RegisterInternal
 UnityEngine.PlayerConnectionInternal::SendMessage
 UnityEngine.PlayerConnectionInternal::UnregisterInternal
 UnityEngine.QualitySettings::get_activeColorSpace
+UnityEngine.Quaternion::Internal_FromEulerRad_Injected
+UnityEngine.Quaternion::Inverse_Injected
 UnityEngine.Random::RandomRangeInt
 UnityEngine.Random::Range
 UnityEngine.Renderer::SetMaterial
@@ -311,6 +317,7 @@ UnityEngine.Texture::GetNativeTexturePtr
 UnityEngine.Texture2D::get_whiteTexture
 UnityEngine.Texture2DArray::Internal_CreateImpl
 UnityEngine.Texture3D::Internal_CreateImpl
+UnityEngine.Time::get_deltaTime
 UnityEngine.Time::get_time
 UnityEngine.Transform::GetSiblingIndex
 UnityEngine.Transform::get_childCount
@@ -320,10 +327,8 @@ UnityEngine.Transform::get_position_Injected
 UnityEngine.Transform::get_rotation_Injected
 UnityEngine.Transform::set_localPosition_Injected
 UnityEngine.Transform::set_localRotation_Injected
+UnityEngine.Transform::set_rotation_Injected
 UnityEngine.Transform::GetChild
 UnityEngine.Transform::GetParent
 UnityEngine.U2D.SpriteAtlasManager::Register
 UnityEngine.UnityLogWriter::WriteStringToUnityLogImpl
-UnityEngine.XR.InputTracking::GetNodeStates_Internal
-UnityEngine.XR.XRMeshSubsystem/MeshTransformList::Dispose
-UnityEngineInternal.Input.NativeInputSystem::set_hasDeviceDiscoveredCallback

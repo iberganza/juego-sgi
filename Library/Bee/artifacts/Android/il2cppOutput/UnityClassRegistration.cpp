@@ -12,9 +12,6 @@ extern "C" void RegisterStaticallyLinkedModulesGranular()
 	void RegisterModule_Audio();
 	RegisterModule_Audio();
 
-	void RegisterModule_Input();
-	RegisterModule_Input();
-
 	void RegisterModule_InputLegacy();
 	RegisterModule_InputLegacy();
 
@@ -29,9 +26,6 @@ extern "C" void RegisterStaticallyLinkedModulesGranular()
 
 	void RegisterModule_Subsystems();
 	RegisterModule_Subsystems();
-
-	void RegisterModule_XR();
-	RegisterModule_XR();
 
 }
 
@@ -57,11 +51,11 @@ class Cubemap; template <> void RegisterUnityClass<Cubemap>(const char*);
 class CubemapArray; template <> void RegisterUnityClass<CubemapArray>(const char*);
 class DelayedCallManager; template <> void RegisterUnityClass<DelayedCallManager>(const char*);
 class EditorExtension; template <> void RegisterUnityClass<EditorExtension>(const char*);
-class FlareLayer; template <> void RegisterUnityClass<FlareLayer>(const char*);
 class GameManager; template <> void RegisterUnityClass<GameManager>(const char*);
 class GameObject; template <> void RegisterUnityClass<GameObject>(const char*);
 class GlobalGameManager; template <> void RegisterUnityClass<GlobalGameManager>(const char*);
 class GraphicsSettings; template <> void RegisterUnityClass<GraphicsSettings>(const char*);
+class Halo; template <> void RegisterUnityClass<Halo>(const char*);
 class InputManager; template <> void RegisterUnityClass<InputManager>(const char*);
 class LevelGameManager; template <> void RegisterUnityClass<LevelGameManager>(const char*);
 class Light; template <> void RegisterUnityClass<Light>(const char*);
@@ -100,11 +94,11 @@ class Texture2DArray; template <> void RegisterUnityClass<Texture2DArray>(const 
 class Texture3D; template <> void RegisterUnityClass<Texture3D>(const char*);
 class TimeManager; template <> void RegisterUnityClass<TimeManager>(const char*);
 class Transform; template <> void RegisterUnityClass<Transform>(const char*);
+class CharacterController; template <> void RegisterUnityClass<CharacterController>(const char*);
 class Collider; template <> void RegisterUnityClass<Collider>(const char*);
 class MeshCollider; template <> void RegisterUnityClass<MeshCollider>(const char*);
 class PhysicsManager; template <> void RegisterUnityClass<PhysicsManager>(const char*);
 class Rigidbody; template <> void RegisterUnityClass<Rigidbody>(const char*);
-class SphereCollider; template <> void RegisterUnityClass<SphereCollider>(const char*);
 
 void RegisterAllClasses()
 {
@@ -139,16 +133,16 @@ RegisterBuiltinTypes();
 	RegisterUnityClass<DelayedCallManager>("Core");
 	//13. EditorExtension
 	RegisterUnityClass<EditorExtension>("Core");
-	//14. FlareLayer
-	RegisterUnityClass<FlareLayer>("Core");
-	//15. GameManager
+	//14. GameManager
 	RegisterUnityClass<GameManager>("Core");
-	//16. GameObject
+	//15. GameObject
 	RegisterUnityClass<GameObject>("Core");
-	//17. GlobalGameManager
+	//16. GlobalGameManager
 	RegisterUnityClass<GlobalGameManager>("Core");
-	//18. GraphicsSettings
+	//17. GraphicsSettings
 	RegisterUnityClass<GraphicsSettings>("Core");
+	//18. Halo
+	RegisterUnityClass<Halo>("Core");
 	//19. InputManager
 	RegisterUnityClass<InputManager>("Core");
 	//20. LevelGameManager
@@ -225,15 +219,15 @@ RegisterBuiltinTypes();
 	RegisterUnityClass<TimeManager>("Core");
 	//56. Transform
 	RegisterUnityClass<Transform>("Core");
-	//57. Collider
+	//57. CharacterController
+	RegisterUnityClass<CharacterController>("Physics");
+	//58. Collider
 	RegisterUnityClass<Collider>("Physics");
-	//58. MeshCollider
+	//59. MeshCollider
 	RegisterUnityClass<MeshCollider>("Physics");
-	//59. PhysicsManager
+	//60. PhysicsManager
 	RegisterUnityClass<PhysicsManager>("Physics");
-	//60. Rigidbody
+	//61. Rigidbody
 	RegisterUnityClass<Rigidbody>("Physics");
-	//61. SphereCollider
-	RegisterUnityClass<SphereCollider>("Physics");
 
 }

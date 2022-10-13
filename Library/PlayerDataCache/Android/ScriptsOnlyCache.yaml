@@ -1,9 +1,9 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
-    - CameraPointer
-    - CardboardStartup
-    - ObjectController
+    - MouseCamLook
+    - PlayerMovement
+    - ScreenshotMaker
     Google.XR.Cardboard.dll:
     - Google.XR.Cardboard.XRLoader
     Unity.Rider.Editor.dll:
@@ -17,12 +17,10 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
-    UnityEngine.SpatialTracking.dll:
-    - UnityEngine.SpatialTracking.TrackedPoseDriver
   serializedClasses: {}
   methodsToPreserve: []
   sceneClasses:
-    Assets/Samples/Google Cardboard XR Plugin for Unity/1.17.0/Hello Cardboard/Scenes/HelloCardboard.unity:
+    Assets/BrokenVector/LowPolyDungeon/Demo Scenes/Dungeon_Demo.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -45,29 +43,31 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 6180}
+      Script: {instanceID: 47586}
     - Class: 114
-      Script: {instanceID: 6402}
+      Script: {instanceID: 47588}
     - Class: 114
-      Script: {instanceID: 7000}
-    - Class: 114
-      Script: {instanceID: 7616}
+      Script: {instanceID: 47590}
     - Class: 115
       Script: {instanceID: 0}
-    - Class: 124
+    - Class: 122
       Script: {instanceID: 0}
-    - Class: 135
+    - Class: 143
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
       Script: {instanceID: 0}
-    - Class: 224
+    - Class: 215
+      Script: {instanceID: 0}
+    - Class: 258
       Script: {instanceID: 0}
     - Class: 850595691
       Script: {instanceID: 0}
@@ -924,7 +924,25 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: b3c4be0b448fae1f324dbb00068b2de4
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerMovement
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ScreenshotMaker
+  - hash:
+      serializedVersion: 2
+      Hash: 655675a941ea756088027703b43352a4
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MouseCamLook
   platform: 13
   scenePathNames:
-  - Assets/Samples/Google Cardboard XR Plugin for Unity/1.17.0/Hello Cardboard/Scenes/HelloCardboard.unity
+  - Assets/BrokenVector/LowPolyDungeon/Demo Scenes/Dungeon_Demo.unity
   playerPath: C:/AndroidApps/prueba.apk
