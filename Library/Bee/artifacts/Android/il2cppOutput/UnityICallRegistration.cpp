@@ -672,7 +672,19 @@ void RegisterAllStrippedInternalCalls()
 
 	//End Registrations for type : UnityEngine.AudioSettings
 
+	//Start Registrations for type : UnityEngine.Behaviour
+
+		//System.Boolean UnityEngine.Behaviour::get_enabled()
+		void Register_UnityEngine_Behaviour_get_enabled();
+		Register_UnityEngine_Behaviour_get_enabled();
+
+	//End Registrations for type : UnityEngine.Behaviour
+
 	//Start Registrations for type : UnityEngine.Camera
+
+		//System.Boolean UnityEngine.Camera::get_stereoEnabled()
+		void Register_UnityEngine_Camera_get_stereoEnabled();
+		Register_UnityEngine_Camera_get_stereoEnabled();
 
 		//System.Int32 UnityEngine.Camera::GetAllCamerasCount()
 		void Register_UnityEngine_Camera_GetAllCamerasCount();
@@ -910,6 +922,10 @@ void RegisterAllStrippedInternalCalls()
 
 	//Start Registrations for type : UnityEngine.GameObject
 
+		//System.Void UnityEngine.GameObject::GetComponentFastPath(System.Type,System.IntPtr)
+		void Register_UnityEngine_GameObject_GetComponentFastPath();
+		Register_UnityEngine_GameObject_GetComponentFastPath();
+
 		//System.Void UnityEngine.GameObject::Internal_CreateGameObject(UnityEngine.GameObject,System.String)
 		void Register_UnityEngine_GameObject_Internal_CreateGameObject();
 		Register_UnityEngine_GameObject_Internal_CreateGameObject();
@@ -921,6 +937,10 @@ void RegisterAllStrippedInternalCalls()
 		//System.Void UnityEngine.GameObject::SetActive(System.Boolean)
 		void Register_UnityEngine_GameObject_SetActive();
 		Register_UnityEngine_GameObject_SetActive();
+
+		//UnityEngine.Transform UnityEngine.GameObject::get_transform()
+		void Register_UnityEngine_GameObject_get_transform();
+		Register_UnityEngine_GameObject_get_transform();
 
 	//End Registrations for type : UnityEngine.GameObject
 
@@ -1050,6 +1070,10 @@ void RegisterAllStrippedInternalCalls()
 
 	//Start Registrations for type : UnityEngine.Material
 
+		//System.Int32 UnityEngine.Material::GetFirstPropertyNameIdByAttribute(UnityEngine.Rendering.ShaderPropertyFlags)
+		void Register_UnityEngine_Material_GetFirstPropertyNameIdByAttribute();
+		Register_UnityEngine_Material_GetFirstPropertyNameIdByAttribute();
+
 		//System.Void UnityEngine.Material::CreateWithMaterial(UnityEngine.Material,UnityEngine.Material)
 		void Register_UnityEngine_Material_CreateWithMaterial();
 		Register_UnityEngine_Material_CreateWithMaterial();
@@ -1061,6 +1085,10 @@ void RegisterAllStrippedInternalCalls()
 		//System.Void UnityEngine.Material::CreateWithString(UnityEngine.Material)
 		void Register_UnityEngine_Material_CreateWithString();
 		Register_UnityEngine_Material_CreateWithString();
+
+		//System.Void UnityEngine.Material::SetColorImpl_Injected(System.Int32,UnityEngine.Color&)
+		void Register_UnityEngine_Material_SetColorImpl_Injected();
+		Register_UnityEngine_Material_SetColorImpl_Injected();
 
 	//End Registrations for type : UnityEngine.Material
 
@@ -1282,6 +1310,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Renderer_SetMaterial();
 		Register_UnityEngine_Renderer_SetMaterial();
 
+		//UnityEngine.Material UnityEngine.Renderer::GetMaterial()
+		void Register_UnityEngine_Renderer_GetMaterial();
+		Register_UnityEngine_Renderer_GetMaterial();
+
 	//End Registrations for type : UnityEngine.Renderer
 
 	//Start Registrations for type : UnityEngine.Rendering.GraphicsSettings
@@ -1397,6 +1429,10 @@ void RegisterAllStrippedInternalCalls()
 	//End Registrations for type : UnityEngine.ScriptableObject
 
 	//Start Registrations for type : UnityEngine.Shader
+
+		//System.Int32 UnityEngine.Shader::PropertyToID(System.String)
+		void Register_UnityEngine_Shader_PropertyToID();
+		Register_UnityEngine_Shader_PropertyToID();
 
 		//System.Int32 UnityEngine.Shader::TagToID(System.String)
 		void Register_UnityEngine_Shader_TagToID();
@@ -1550,6 +1586,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Transform_set_localRotation_Injected();
 		Register_UnityEngine_Transform_set_localRotation_Injected();
 
+		//System.Void UnityEngine.Transform::set_position_Injected(UnityEngine.Vector3&)
+		void Register_UnityEngine_Transform_set_position_Injected();
+		Register_UnityEngine_Transform_set_position_Injected();
+
 		//System.Void UnityEngine.Transform::set_rotation_Injected(UnityEngine.Quaternion&)
 		void Register_UnityEngine_Transform_set_rotation_Injected();
 		Register_UnityEngine_Transform_set_rotation_Injected();
@@ -1579,5 +1619,29 @@ void RegisterAllStrippedInternalCalls()
 		Register_UnityEngine_UnityLogWriter_WriteStringToUnityLogImpl();
 
 	//End Registrations for type : UnityEngine.UnityLogWriter
+
+	//Start Registrations for type : UnityEngine.XR.InputTracking
+
+		//System.Void UnityEngine.XR.InputTracking::GetNodeStates_Internal(System.Collections.Generic.List`1<UnityEngine.XR.XRNodeState>)
+		void Register_UnityEngine_XR_InputTracking_GetNodeStates_Internal();
+		Register_UnityEngine_XR_InputTracking_GetNodeStates_Internal();
+
+	//End Registrations for type : UnityEngine.XR.InputTracking
+
+	//Start Registrations for type : UnityEngine.XR.XRMeshSubsystem/MeshTransformList
+
+		//System.Void UnityEngine.XR.XRMeshSubsystem/MeshTransformList::Dispose(System.IntPtr)
+		void Register_UnityEngine_XR_XRMeshSubsystem_MeshTransformList_Dispose();
+		Register_UnityEngine_XR_XRMeshSubsystem_MeshTransformList_Dispose();
+
+	//End Registrations for type : UnityEngine.XR.XRMeshSubsystem/MeshTransformList
+
+	//Start Registrations for type : UnityEngineInternal.Input.NativeInputSystem
+
+		//System.Void UnityEngineInternal.Input.NativeInputSystem::set_hasDeviceDiscoveredCallback(System.Boolean)
+		void Register_UnityEngineInternal_Input_NativeInputSystem_set_hasDeviceDiscoveredCallback();
+		Register_UnityEngineInternal_Input_NativeInputSystem_set_hasDeviceDiscoveredCallback();
+
+	//End Registrations for type : UnityEngineInternal.Input.NativeInputSystem
 
 }

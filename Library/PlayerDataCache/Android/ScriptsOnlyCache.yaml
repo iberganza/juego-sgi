@@ -4,10 +4,14 @@ ScriptsOnlyBuild:
     - MouseCamLook
     - PlayerMovement
     - ScreenshotMaker
+    - TeleportBase
+    - TeleportPlayer
     Google.XR.Cardboard.dll:
     - Google.XR.Cardboard.XRLoader
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
+    Unity.Timeline.Editor.dll:
+    - TimelineProjectSettings
     Unity.XR.Management.Editor.dll:
     - UnityEditor.XR.Management.XRGeneralSettingsPerBuildTarget
     Unity.XR.Management.dll:
@@ -17,6 +21,8 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
+    UnityEngine.SpatialTracking.dll:
+    - UnityEngine.SpatialTracking.TrackedPoseDriver
   serializedClasses: {}
   methodsToPreserve: []
   sceneClasses:
@@ -41,6 +47,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 64
       Script: {instanceID: 0}
+    - Class: 65
+      Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
     - Class: 89
@@ -50,11 +58,17 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 47586}
+      Script: {instanceID: 2844}
     - Class: 114
-      Script: {instanceID: 47588}
+      Script: {instanceID: 4306}
     - Class: 114
-      Script: {instanceID: 47590}
+      Script: {instanceID: 4576}
+    - Class: 114
+      Script: {instanceID: 5752}
+    - Class: 114
+      Script: {instanceID: 6506}
+    - Class: 114
+      Script: {instanceID: 7008}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 122
@@ -216,6 +230,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TeleportBase
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -459,6 +479,12 @@ ScriptsOnlyBuild:
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ScreenshotMaker
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnJointBreak2DMessageListener
@@ -474,6 +500,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SubMeshUI
+  - hash:
+      serializedVersion: 2
+      Hash: b3c4be0b448fae1f324dbb00068b2de4
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerMovement
   - hash:
       serializedVersion: 2
       Hash: fd68d84f33fad85aac38f2739c0ee270
@@ -626,6 +658,12 @@ ScriptsOnlyBuild:
     className: Text
   - hash:
       serializedVersion: 2
+      Hash: 655675a941ea756088027703b43352a4
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MouseCamLook
+  - hash:
+      serializedVersion: 2
       Hash: 2574ac7d50617d23cdefe4ad22f5e1ad
     assemblyName: Unity.VisualScripting.State.dll
     namespaceName: Unity.VisualScripting
@@ -678,6 +716,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ObjectController
+  - hash:
+      serializedVersion: 2
+      Hash: fd9eb57bcc3ac3b37e0fbd270a838491
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TeleportPlayer
   - hash:
       serializedVersion: 2
       Hash: e09e8bebc0fcd32bb8af1287a6b44816
@@ -924,25 +968,7 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: b3c4be0b448fae1f324dbb00068b2de4
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: PlayerMovement
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ScreenshotMaker
-  - hash:
-      serializedVersion: 2
-      Hash: 655675a941ea756088027703b43352a4
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: MouseCamLook
   platform: 13
   scenePathNames:
   - Assets/BrokenVector/LowPolyDungeon/Demo Scenes/Dungeon_Demo.unity
-  playerPath: C:/AndroidApps/prueba.apk
+  playerPath: C:/Users/david/OneDrive/Escritorio/MEI/1A/SGI/cardboard/juego-sgi/app.apk

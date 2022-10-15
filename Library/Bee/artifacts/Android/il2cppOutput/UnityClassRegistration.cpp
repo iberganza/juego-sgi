@@ -12,6 +12,9 @@ extern "C" void RegisterStaticallyLinkedModulesGranular()
 	void RegisterModule_Audio();
 	RegisterModule_Audio();
 
+	void RegisterModule_Input();
+	RegisterModule_Input();
+
 	void RegisterModule_InputLegacy();
 	RegisterModule_InputLegacy();
 
@@ -26,6 +29,9 @@ extern "C" void RegisterStaticallyLinkedModulesGranular()
 
 	void RegisterModule_Subsystems();
 	RegisterModule_Subsystems();
+
+	void RegisterModule_XR();
+	RegisterModule_XR();
 
 }
 
@@ -94,6 +100,7 @@ class Texture2DArray; template <> void RegisterUnityClass<Texture2DArray>(const 
 class Texture3D; template <> void RegisterUnityClass<Texture3D>(const char*);
 class TimeManager; template <> void RegisterUnityClass<TimeManager>(const char*);
 class Transform; template <> void RegisterUnityClass<Transform>(const char*);
+class BoxCollider; template <> void RegisterUnityClass<BoxCollider>(const char*);
 class CharacterController; template <> void RegisterUnityClass<CharacterController>(const char*);
 class Collider; template <> void RegisterUnityClass<Collider>(const char*);
 class MeshCollider; template <> void RegisterUnityClass<MeshCollider>(const char*);
@@ -104,7 +111,7 @@ void RegisterAllClasses()
 {
 void RegisterBuiltinTypes();
 RegisterBuiltinTypes();
-	//Total: 62 non stripped classes
+	//Total: 63 non stripped classes
 	//0. AudioBehaviour
 	RegisterUnityClass<AudioBehaviour>("Audio");
 	//1. AudioClip
@@ -219,15 +226,17 @@ RegisterBuiltinTypes();
 	RegisterUnityClass<TimeManager>("Core");
 	//56. Transform
 	RegisterUnityClass<Transform>("Core");
-	//57. CharacterController
+	//57. BoxCollider
+	RegisterUnityClass<BoxCollider>("Physics");
+	//58. CharacterController
 	RegisterUnityClass<CharacterController>("Physics");
-	//58. Collider
+	//59. Collider
 	RegisterUnityClass<Collider>("Physics");
-	//59. MeshCollider
+	//60. MeshCollider
 	RegisterUnityClass<MeshCollider>("Physics");
-	//60. PhysicsManager
+	//61. PhysicsManager
 	RegisterUnityClass<PhysicsManager>("Physics");
-	//61. Rigidbody
+	//62. Rigidbody
 	RegisterUnityClass<Rigidbody>("Physics");
 
 }

@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\UnityProjects\\JuegoSGI\\Library\\Bee\\Android\\Prj\\IL2CPP\\Gradle\\launcher\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-watch-v21\\values-watch-v21.xml",
+            "outputFile": "C:\\Users\\david\\OneDrive\\Escritorio\\MEI\\1A\\SGI\\cardboard\\juego-sgi\\Library\\Bee\\Android\\Prj\\IL2CPP\\Gradle\\launcher\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-watch-v21\\values-watch-v21.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Iñigo\\.gradle\\caches\\transforms-2\\files-2.1\\9e788877d1498ebda63702ab1c9845a2\\appcompat-1.4.2\\res\\values-watch-v21\\values-watch-v21.xml",
+                    "source": "C:\\Users\\david\\.gradle\\caches\\transforms-2\\files-2.1\\9e788877d1498ebda63702ab1c9845a2\\appcompat-1.4.2\\res\\values-watch-v21\\values-watch-v21.xml",
                     "from": {
                         "startLines": "2,6,10",
                         "startColumns": "4,4,4",
