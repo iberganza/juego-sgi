@@ -14,10 +14,20 @@ public class TeleportBase : MonoBehaviour
     // Update is called once per frame
     private void OnMouseEnter()
     {
-	    renderer.material.color = Color.red;
+        renderer.material.color = Color.red;
     }
 
     private void OnMouseExit()
+    {
+        renderer.material.color = Color.white;
+    }
+
+    private void OnPointerEnter()
+    {
+        renderer.material.color = Color.red;
+    }
+
+    private void OnPointerExit()
     {
         renderer.material.color = Color.white;
     }

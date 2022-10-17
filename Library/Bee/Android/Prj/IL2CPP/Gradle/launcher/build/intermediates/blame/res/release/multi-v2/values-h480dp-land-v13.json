@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\david\\OneDrive\\Escritorio\\MEI\\1A\\SGI\\cardboard\\juego-sgi\\Library\\Bee\\Android\\Prj\\IL2CPP\\Gradle\\launcher\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-h480dp-land-v13\\values-h480dp-land-v13.xml",
+            "outputFile": "C:\\UnityProjects\\JuegoSGI\\juego-sgi\\Library\\Bee\\Android\\Prj\\IL2CPP\\Gradle\\launcher\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-h480dp-land-v13\\values-h480dp-land-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\david\\.gradle\\caches\\transforms-2\\files-2.1\\a0ebba694f8e6a95bc427eaef4894530\\material-1.6.1\\res\\values-h480dp-land-v13\\values-h480dp-land-v13.xml",
+                    "source": "C:\\Users\\Iñigo\\.gradle\\caches\\transforms-2\\files-2.1\\a0ebba694f8e6a95bc427eaef4894530\\material-1.6.1\\res\\values-h480dp-land-v13\\values-h480dp-land-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
                         "startColumns": "4,4,4,4,4,4,4,4,4",

@@ -26,6 +26,7 @@ public class TeleportPlayer : MonoBehaviour
             Debug.Log("Raycast");
             if (hitInfo.collider.gameObject.GetComponent<TeleportBase>() != null)
             {
+                
                 if (Time.time - startTimer >= deltaTime)
                 {
                     SetPlayerTransformPosition(hitInfo);
@@ -33,9 +34,11 @@ public class TeleportPlayer : MonoBehaviour
                 {
                     if(startTimer == null)
                     {
+                        HighlightTeleporter(hitInfo);
                         Debug.Log("Start");
                         startTimer = Time.time;
-                    } 
+                    }
+                    DimTeleporter(hitInfo);
                 }
             }else
             {
@@ -52,5 +55,14 @@ public class TeleportPlayer : MonoBehaviour
         this.transform.position = new Vector3(hitInfo.collider.gameObject.transform.position.x, 
                                                         this.transform.position.y, 
                                                         hitInfo.collider.gameObject.transform.position.z);
+    }
+
+    private void HighlightTeleporter(RaycastHit hitInfo)
+    {
+        hitInfo.collider.gameObject.GetComponent<Renderer>().material.color = Color.red;
+    }
+    private void DimTeleporter(RaycastHit hitInfo)
+    {
+        hitInfo.collider.gameObject.GetComponent<Renderer>().material.color = Color.red;
     }
 }
