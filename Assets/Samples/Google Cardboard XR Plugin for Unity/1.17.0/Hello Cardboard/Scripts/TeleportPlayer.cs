@@ -7,6 +7,7 @@ public class TeleportPlayer : MonoBehaviour
     Rigidbody rigidbody;
     private float? startTimer;
     public float deltaTime = 2f;
+    private GameObject lastHit;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,13 +21,12 @@ public class TeleportPlayer : MonoBehaviour
     }
     private void TeleportHoldMouse()
     {
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        Ray ray = new Ray(Camera.main.transform.position, Camera.main.transform.forward);
         if (Physics.Raycast(ray, out RaycastHit hitInfo))
         {     
-            Debug.Log("Raycast");
             if (hitInfo.collider.gameObject.GetComponent<TeleportBase>() != null)
             {
-                
+                lastHit = hitInfo.collider.gameObject;
                 if (Time.time - startTimer >= deltaTime)
                 {
                     SetPlayerTransformPosition(hitInfo);
@@ -34,15 +34,18 @@ public class TeleportPlayer : MonoBehaviour
                 {
                     if(startTimer == null)
                     {
-                        HighlightTeleporter(hitInfo);
-                        Debug.Log("Start");
                         startTimer = Time.time;
                     }
-                    DimTeleporter(hitInfo);
+                    HighlightTeleporter(hitInfo);
                 }
             }else
             {
                 startTimer = null;
+                if (lastHit != null)
+                {
+                    lastHit.GetComponent<Renderer>().material.color = Color.white;
+                    lastHit = null;
+                }
             }
         }else
         {

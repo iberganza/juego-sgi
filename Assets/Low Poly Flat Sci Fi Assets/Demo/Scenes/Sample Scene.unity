@@ -28649,7 +28649,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 158f472543a5f494fbfae7a6cdacccf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionDistance: 4
+  interactionDistance: 0
 --- !u!4 &1172869928 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4938580743446470, guid: 3edc5b609651d4f169d96845439e7753, type: 3}
@@ -40667,9 +40667,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1732758078}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aebfb4b86b2e54606894da54f755db2d, type: 3}
+  m_Script: {fileID: 11500000, guid: ec82b01ed20028940bf2aa224a3cb468, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speedH: 2
+  speedV: 2
+  yaw: 0
+  pitch: 0
 --- !u!1001 &1741250391
 PrefabInstance:
   m_ObjectHideFlags: 0

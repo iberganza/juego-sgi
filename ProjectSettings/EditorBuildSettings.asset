@@ -9,7 +9,10 @@ EditorBuildSettings:
     path: Assets/Samples/Google Cardboard XR Plugin for Unity/1.17.0/Hello Cardboard/Scenes/HelloCardboard.unity
     guid: 145a2a45d7bc746b19cb68410368bf96
   - enabled: 0
-    path: Assets/BrokenVector/LowPolyDungeon/Demo Scenes/Dungeon_Demo.unity
-    guid: b94ee59f12f411f488e6df197429e012
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Low Poly Flat Sci Fi Assets/Demo/Scenes/Sample Scene.unity
+    guid: 0b0403de45d31496f8b90f72b42b0ba0
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 329a97e3537e9fb45ac021fe2c679ba7, type: 2}

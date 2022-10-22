@@ -16,10 +16,15 @@ public class InteractPlayer : MonoBehaviour
     void Update()
     {
         
-        Debug.DrawRay(camera.position, camera.forward * interactionDistance, Color.red);
-        
-        if (Physics.Raycast(camera.position, camera.forward, out RaycastHit hitInfo, interactionDistance,LayerMask.GetMask("Interactable"))){
-            hitInfo.transform.GetComponent<Interactable>().Interact();
+        Ray ray = new Ray(Camera.main.transform.position, Camera.main.transform.forward);
+
+        if (Physics.Raycast(ray, out RaycastHit hitInfo))
+        {     
+            if (hitInfo.collider.gameObject.GetComponent<Interactable>() != null)
+            {
+                hitInfo.transform.GetComponent<Interactable>().Interact();
+            }
         }
+        
     }
 }
