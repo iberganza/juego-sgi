@@ -84,7 +84,7 @@ public class DoubleSlidingDoorController : MonoBehaviour {
 	}
 
 	void OnTriggerStay(Collider other) {
-		
+		//DoOpenDoor();
 	}
 
 	void OnTriggerExit(Collider other) {

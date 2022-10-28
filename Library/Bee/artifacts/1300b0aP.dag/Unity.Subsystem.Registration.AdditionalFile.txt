@@ -1,1 +1,1 @@
-C:\Users\david\OneDrive\Escritorio\MEI\1A\SGI\cardboard\juego-sgi
+C:\UnityProjects\JuegoSGI\juego-sgi

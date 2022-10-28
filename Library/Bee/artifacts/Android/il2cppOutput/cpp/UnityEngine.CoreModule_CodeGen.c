@@ -1309,42 +1309,42 @@ extern void PreloadData_PreloadDataDontStripMe_mB4D9C8C36672A400FBE7E024C47E0FD1
 extern void Transform__ctor_mB597BB13F66ADC3B8A3D45A2ABDEC8C02B421B93 (void);
 // 0x0000029E UnityEngine.Vector3 UnityEngine.Transform::get_position()
 extern void Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1 (void);
-// 0x0000029F System.Void UnityEngine.Transform::set_position(UnityEngine.Vector3)
-extern void Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156 (void);
-// 0x000002A0 UnityEngine.Vector3 UnityEngine.Transform::get_localPosition()
+// 0x0000029F UnityEngine.Vector3 UnityEngine.Transform::get_localPosition()
 extern void Transform_get_localPosition_mA9C86B990DF0685EA1061A120218993FDCC60A95 (void);
-// 0x000002A1 System.Void UnityEngine.Transform::set_localPosition(UnityEngine.Vector3)
+// 0x000002A0 System.Void UnityEngine.Transform::set_localPosition(UnityEngine.Vector3)
 extern void Transform_set_localPosition_mDE1C997F7D79C0885210B7732B4BA50EE7D73134 (void);
-// 0x000002A2 System.Void UnityEngine.Transform::set_eulerAngles(UnityEngine.Vector3)
+// 0x000002A1 System.Void UnityEngine.Transform::set_eulerAngles(UnityEngine.Vector3)
 extern void Transform_set_eulerAngles_m9F0BC484A7915A51FAB87230644229B75BACA004 (void);
-// 0x000002A3 UnityEngine.Vector3 UnityEngine.Transform::get_forward()
+// 0x000002A2 UnityEngine.Vector3 UnityEngine.Transform::get_forward()
 extern void Transform_get_forward_mFCFACF7165FDAB21E80E384C494DF278386CEE2F (void);
-// 0x000002A4 UnityEngine.Quaternion UnityEngine.Transform::get_rotation()
+// 0x000002A3 UnityEngine.Quaternion UnityEngine.Transform::get_rotation()
 extern void Transform_get_rotation_m32AF40CA0D50C797DA639A696F8EAEC7524C179C (void);
-// 0x000002A5 System.Void UnityEngine.Transform::set_rotation(UnityEngine.Quaternion)
+// 0x000002A4 System.Void UnityEngine.Transform::set_rotation(UnityEngine.Quaternion)
 extern void Transform_set_rotation_m61340DE74726CF0F9946743A727C4D444397331D (void);
-// 0x000002A6 UnityEngine.Quaternion UnityEngine.Transform::get_localRotation()
+// 0x000002A5 UnityEngine.Quaternion UnityEngine.Transform::get_localRotation()
 extern void Transform_get_localRotation_mD53D37611A5DAE93EC6C7BBCAC337408C5CACA77 (void);
-// 0x000002A7 System.Void UnityEngine.Transform::set_localRotation(UnityEngine.Quaternion)
+// 0x000002A6 System.Void UnityEngine.Transform::set_localRotation(UnityEngine.Quaternion)
 extern void Transform_set_localRotation_mAB4A011D134BA58AB780BECC0025CA65F16185FA (void);
-// 0x000002A8 UnityEngine.Transform UnityEngine.Transform::get_parent()
+// 0x000002A7 UnityEngine.Transform UnityEngine.Transform::get_parent()
 extern void Transform_get_parent_m65354E28A4C94EC00EBCF03532F7B0718380791E (void);
-// 0x000002A9 UnityEngine.Transform UnityEngine.Transform::get_parentInternal()
+// 0x000002A8 UnityEngine.Transform UnityEngine.Transform::get_parentInternal()
 extern void Transform_get_parentInternal_mADE30238BECA9CDE15FB84E208FB5C6FDC31C14E (void);
-// 0x000002AA UnityEngine.Transform UnityEngine.Transform::GetParent()
+// 0x000002A9 UnityEngine.Transform UnityEngine.Transform::GetParent()
 extern void Transform_GetParent_m0DDE14F6AA36850AAEB05B13AB8B18CB02BA875B (void);
-// 0x000002AB System.Int32 UnityEngine.Transform::get_childCount()
+// 0x000002AA System.Int32 UnityEngine.Transform::get_childCount()
 extern void Transform_get_childCount_mE9C29C702AB662CC540CA053EDE48BDAFA35B4B0 (void);
-// 0x000002AC System.Int32 UnityEngine.Transform::GetSiblingIndex()
+// 0x000002AB System.Int32 UnityEngine.Transform::GetSiblingIndex()
 extern void Transform_GetSiblingIndex_m45EE497589C36D1FBED87FB802BD80A95CE68575 (void);
-// 0x000002AD System.Collections.IEnumerator UnityEngine.Transform::GetEnumerator()
+// 0x000002AC UnityEngine.Transform UnityEngine.Transform::FindRelativeTransformWithPath(UnityEngine.Transform,System.String,System.Boolean)
+extern void Transform_FindRelativeTransformWithPath_m407B8CA63F1BFAF029D84629B59545C4B12B92D6 (void);
+// 0x000002AD UnityEngine.Transform UnityEngine.Transform::Find(System.String)
+extern void Transform_Find_m3087032B0E1C5B96A2D2C27020BAEAE2DA08F932 (void);
+// 0x000002AE System.Collections.IEnumerator UnityEngine.Transform::GetEnumerator()
 extern void Transform_GetEnumerator_mA7E1C882ACA0C33E284711CD09971DEA3FFEF404 (void);
-// 0x000002AE UnityEngine.Transform UnityEngine.Transform::GetChild(System.Int32)
+// 0x000002AF UnityEngine.Transform UnityEngine.Transform::GetChild(System.Int32)
 extern void Transform_GetChild_mE686DF0C7AAC1F7AEF356967B1C04D8B8E240EAF (void);
-// 0x000002AF System.Void UnityEngine.Transform::get_position_Injected(UnityEngine.Vector3&)
+// 0x000002B0 System.Void UnityEngine.Transform::get_position_Injected(UnityEngine.Vector3&)
 extern void Transform_get_position_Injected_mC69C78EAC69F2912B161B5710E69F7D3DC30C815 (void);
-// 0x000002B0 System.Void UnityEngine.Transform::set_position_Injected(UnityEngine.Vector3&)
-extern void Transform_set_position_Injected_mD8E9699EA5FEBA7817BBBCB72F62BFDD26C14E33 (void);
 // 0x000002B1 System.Void UnityEngine.Transform::get_localPosition_Injected(UnityEngine.Vector3&)
 extern void Transform_get_localPosition_Injected_m4EA29DEBBB27D41E17E6F7469217B50B7594DF22 (void);
 // 0x000002B2 System.Void UnityEngine.Transform::set_localPosition_Injected(UnityEngine.Vector3&)
@@ -2790,7 +2790,6 @@ static Il2CppMethodPointer s_methodPointers[1105] =
 	PreloadData_PreloadDataDontStripMe_mB4D9C8C36672A400FBE7E024C47E0FD152BABA02,
 	Transform__ctor_mB597BB13F66ADC3B8A3D45A2ABDEC8C02B421B93,
 	Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1,
-	Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156,
 	Transform_get_localPosition_mA9C86B990DF0685EA1061A120218993FDCC60A95,
 	Transform_set_localPosition_mDE1C997F7D79C0885210B7732B4BA50EE7D73134,
 	Transform_set_eulerAngles_m9F0BC484A7915A51FAB87230644229B75BACA004,
@@ -2804,10 +2803,11 @@ static Il2CppMethodPointer s_methodPointers[1105] =
 	Transform_GetParent_m0DDE14F6AA36850AAEB05B13AB8B18CB02BA875B,
 	Transform_get_childCount_mE9C29C702AB662CC540CA053EDE48BDAFA35B4B0,
 	Transform_GetSiblingIndex_m45EE497589C36D1FBED87FB802BD80A95CE68575,
+	Transform_FindRelativeTransformWithPath_m407B8CA63F1BFAF029D84629B59545C4B12B92D6,
+	Transform_Find_m3087032B0E1C5B96A2D2C27020BAEAE2DA08F932,
 	Transform_GetEnumerator_mA7E1C882ACA0C33E284711CD09971DEA3FFEF404,
 	Transform_GetChild_mE686DF0C7AAC1F7AEF356967B1C04D8B8E240EAF,
 	Transform_get_position_Injected_mC69C78EAC69F2912B161B5710E69F7D3DC30C815,
-	Transform_set_position_Injected_mD8E9699EA5FEBA7817BBBCB72F62BFDD26C14E33,
 	Transform_get_localPosition_Injected_m4EA29DEBBB27D41E17E6F7469217B50B7594DF22,
 	Transform_set_localPosition_Injected_mB0AC6C9E6298454212FD390CB010ED9F5B0B075A,
 	Transform_get_rotation_Injected_m6532D51417F17B804F56FC809B833F3BE524F0FC,
@@ -4249,7 +4249,6 @@ static const int32_t s_InvokerIndices[1105] =
 	1064,
 	1064,
 	1063,
-	941,
 	1063,
 	941,
 	941,
@@ -4263,9 +4262,10 @@ static const int32_t s_InvokerIndices[1105] =
 	1038,
 	1028,
 	1028,
+	1507,
+	840,
 	1038,
 	838,
-	891,
 	891,
 	891,
 	891,

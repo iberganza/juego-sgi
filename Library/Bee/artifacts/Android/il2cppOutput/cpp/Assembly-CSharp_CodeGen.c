@@ -138,39 +138,53 @@ extern void TeleportPlayer_SetPlayerTransformPosition_mCD70291727AE22B807152279E
 extern void TeleportPlayer_HighlightTeleporter_m83A63E39121ADBA1BF8891795BEC31255FDC30DC (void);
 // 0x0000003F System.Void TeleportPlayer::DimTeleporter(UnityEngine.RaycastHit)
 extern void TeleportPlayer_DimTeleporter_m20072EE5AB88AE50B154F7549F1C5F47178208C5 (void);
-// 0x00000040 System.Void TeleportPlayer::.ctor()
+// 0x00000040 System.Collections.IEnumerator TeleportPlayer::WalkToTeleporter()
+extern void TeleportPlayer_WalkToTeleporter_mC2C5BD47B8CC2D28D62ABACB71F479B43C041C25 (void);
+// 0x00000041 System.Void TeleportPlayer::.ctor()
 extern void TeleportPlayer__ctor_m5B8B88F1D6034771D51BE03E1296DC19941882DC (void);
-// 0x00000041 System.Boolean VrModeController::get__isScreenTouched()
+// 0x00000042 System.Void TeleportPlayer/<WalkToTeleporter>d__14::.ctor(System.Int32)
+extern void U3CWalkToTeleporterU3Ed__14__ctor_mD3AD926074649CC40C818DBABF489B06D5173A88 (void);
+// 0x00000043 System.Void TeleportPlayer/<WalkToTeleporter>d__14::System.IDisposable.Dispose()
+extern void U3CWalkToTeleporterU3Ed__14_System_IDisposable_Dispose_m91D5A771138BCC93F0807742E3C7A1E3F11926E2 (void);
+// 0x00000044 System.Boolean TeleportPlayer/<WalkToTeleporter>d__14::MoveNext()
+extern void U3CWalkToTeleporterU3Ed__14_MoveNext_m070B9A0161E2567BE1F8D818D67F6494CC070468 (void);
+// 0x00000045 System.Object TeleportPlayer/<WalkToTeleporter>d__14::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CWalkToTeleporterU3Ed__14_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m5F4609A454D84704D3CCA0E0CE70850F3F771203 (void);
+// 0x00000046 System.Void TeleportPlayer/<WalkToTeleporter>d__14::System.Collections.IEnumerator.Reset()
+extern void U3CWalkToTeleporterU3Ed__14_System_Collections_IEnumerator_Reset_mE32E43FEA572EAFE7B66404AD1F41744BF31174A (void);
+// 0x00000047 System.Object TeleportPlayer/<WalkToTeleporter>d__14::System.Collections.IEnumerator.get_Current()
+extern void U3CWalkToTeleporterU3Ed__14_System_Collections_IEnumerator_get_Current_m6D892F70396CECD53F022E6A7F7750F79AFF3600 (void);
+// 0x00000048 System.Boolean VrModeController::get__isScreenTouched()
 extern void VrModeController_get__isScreenTouched_mD72F14326F1D19F3AC970FD0ED9D0C5CD5C6CFB5 (void);
-// 0x00000042 System.Boolean VrModeController::get__isVrModeEnabled()
+// 0x00000049 System.Boolean VrModeController::get__isVrModeEnabled()
 extern void VrModeController_get__isVrModeEnabled_m8D8D68536E09FF2DEAD3795AF30A57BA6DF7C95F (void);
-// 0x00000043 System.Void VrModeController::Start()
+// 0x0000004A System.Void VrModeController::Start()
 extern void VrModeController_Start_m10BF77FE8B825D9640800D5DF7EF791A391FA49B (void);
-// 0x00000044 System.Void VrModeController::Update()
+// 0x0000004B System.Void VrModeController::Update()
 extern void VrModeController_Update_m43F984D5BF13F2C545B508D93645C1C3AC9262D5 (void);
-// 0x00000045 System.Void VrModeController::EnterVR()
+// 0x0000004C System.Void VrModeController::EnterVR()
 extern void VrModeController_EnterVR_m5FD79BF38C6AF621AF9992378BC5C3618FDE5EFB (void);
-// 0x00000046 System.Void VrModeController::ExitVR()
+// 0x0000004D System.Void VrModeController::ExitVR()
 extern void VrModeController_ExitVR_m1FF25DFE5B3BC15CEDE5C42F56CC399693867397 (void);
-// 0x00000047 System.Collections.IEnumerator VrModeController::StartXR()
+// 0x0000004E System.Collections.IEnumerator VrModeController::StartXR()
 extern void VrModeController_StartXR_m57D80B4AD6B28A7C4E36052563B6227E824CDDB4 (void);
-// 0x00000048 System.Void VrModeController::StopXR()
+// 0x0000004F System.Void VrModeController::StopXR()
 extern void VrModeController_StopXR_m0338E8D8035C06E1A46F17C16BBC7933EE9CAA3A (void);
-// 0x00000049 System.Void VrModeController::.ctor()
+// 0x00000050 System.Void VrModeController::.ctor()
 extern void VrModeController__ctor_m94505259847FB7C54346D7CF02AD85793393D141 (void);
-// 0x0000004A System.Void VrModeController/<StartXR>d__10::.ctor(System.Int32)
+// 0x00000051 System.Void VrModeController/<StartXR>d__10::.ctor(System.Int32)
 extern void U3CStartXRU3Ed__10__ctor_mDA431E1365B30DA2F64F1E7875CD387F2231E138 (void);
-// 0x0000004B System.Void VrModeController/<StartXR>d__10::System.IDisposable.Dispose()
+// 0x00000052 System.Void VrModeController/<StartXR>d__10::System.IDisposable.Dispose()
 extern void U3CStartXRU3Ed__10_System_IDisposable_Dispose_m3DC1735AA5EC0D61A72803BB3B33B9499A373336 (void);
-// 0x0000004C System.Boolean VrModeController/<StartXR>d__10::MoveNext()
+// 0x00000053 System.Boolean VrModeController/<StartXR>d__10::MoveNext()
 extern void U3CStartXRU3Ed__10_MoveNext_m9A6340456306ACFADD0D458946C82448A862E68B (void);
-// 0x0000004D System.Object VrModeController/<StartXR>d__10::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x00000054 System.Object VrModeController/<StartXR>d__10::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CStartXRU3Ed__10_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mD0B4CE8CBE980FD132B19F40FF2172502B1D0566 (void);
-// 0x0000004E System.Void VrModeController/<StartXR>d__10::System.Collections.IEnumerator.Reset()
+// 0x00000055 System.Void VrModeController/<StartXR>d__10::System.Collections.IEnumerator.Reset()
 extern void U3CStartXRU3Ed__10_System_Collections_IEnumerator_Reset_mD99AEFDB38CFAC11731CDB371647891816288600 (void);
-// 0x0000004F System.Object VrModeController/<StartXR>d__10::System.Collections.IEnumerator.get_Current()
+// 0x00000056 System.Object VrModeController/<StartXR>d__10::System.Collections.IEnumerator.get_Current()
 extern void U3CStartXRU3Ed__10_System_Collections_IEnumerator_get_Current_mD84D9ACDB0A04C619509BA51590975DB84C30B0F (void);
-static Il2CppMethodPointer s_methodPointers[79] = 
+static Il2CppMethodPointer s_methodPointers[86] = 
 {
 	CameraScript_Start_mA5B7202B365DD49486C67738FBD1EC84D104BE33,
 	CameraScript_Update_mDAE6380A029D3E301E4432169484CCE2E881E873,
@@ -235,7 +249,14 @@ static Il2CppMethodPointer s_methodPointers[79] =
 	TeleportPlayer_SetPlayerTransformPosition_mCD70291727AE22B807152279EABD65CA31C5B88A,
 	TeleportPlayer_HighlightTeleporter_m83A63E39121ADBA1BF8891795BEC31255FDC30DC,
 	TeleportPlayer_DimTeleporter_m20072EE5AB88AE50B154F7549F1C5F47178208C5,
+	TeleportPlayer_WalkToTeleporter_mC2C5BD47B8CC2D28D62ABACB71F479B43C041C25,
 	TeleportPlayer__ctor_m5B8B88F1D6034771D51BE03E1296DC19941882DC,
+	U3CWalkToTeleporterU3Ed__14__ctor_mD3AD926074649CC40C818DBABF489B06D5173A88,
+	U3CWalkToTeleporterU3Ed__14_System_IDisposable_Dispose_m91D5A771138BCC93F0807742E3C7A1E3F11926E2,
+	U3CWalkToTeleporterU3Ed__14_MoveNext_m070B9A0161E2567BE1F8D818D67F6494CC070468,
+	U3CWalkToTeleporterU3Ed__14_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m5F4609A454D84704D3CCA0E0CE70850F3F771203,
+	U3CWalkToTeleporterU3Ed__14_System_Collections_IEnumerator_Reset_mE32E43FEA572EAFE7B66404AD1F41744BF31174A,
+	U3CWalkToTeleporterU3Ed__14_System_Collections_IEnumerator_get_Current_m6D892F70396CECD53F022E6A7F7750F79AFF3600,
 	VrModeController_get__isScreenTouched_mD72F14326F1D19F3AC970FD0ED9D0C5CD5C6CFB5,
 	VrModeController_get__isVrModeEnabled_m8D8D68536E09FF2DEAD3795AF30A57BA6DF7C95F,
 	VrModeController_Start_m10BF77FE8B825D9640800D5DF7EF791A391FA49B,
@@ -252,7 +273,7 @@ static Il2CppMethodPointer s_methodPointers[79] =
 	U3CStartXRU3Ed__10_System_Collections_IEnumerator_Reset_mD99AEFDB38CFAC11731CDB371647891816288600,
 	U3CStartXRU3Ed__10_System_Collections_IEnumerator_get_Current_mD84D9ACDB0A04C619509BA51590975DB84C30B0F,
 };
-static const int32_t s_InvokerIndices[79] = 
+static const int32_t s_InvokerIndices[86] = 
 {
 	1064,
 	1064,
@@ -317,7 +338,14 @@ static const int32_t s_InvokerIndices[79] =
 	930,
 	930,
 	930,
+	1038,
 	1064,
+	911,
+	1064,
+	1014,
+	1038,
+	1064,
+	1038,
 	1014,
 	1014,
 	1064,
@@ -338,7 +366,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	79,
+	86,
 	s_methodPointers,
 	0,
 	NULL,
