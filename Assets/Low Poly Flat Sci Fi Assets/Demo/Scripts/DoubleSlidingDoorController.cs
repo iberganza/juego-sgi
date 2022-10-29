@@ -17,6 +17,10 @@ public enum DoubleSlidingDoorStatus {
 [RequireComponent(typeof(AudioSource))]
 public class DoubleSlidingDoorController : MonoBehaviour {
 
+	public InteractPlayer player;
+	private float distance = 4f;
+	public string cardId;
+
 	private DoubleSlidingDoorStatus status = DoubleSlidingDoorStatus.Closed;
 
 	[SerializeField]
@@ -63,28 +67,38 @@ public class DoubleSlidingDoorController : MonoBehaviour {
 	void Update () {
 		if (status != DoubleSlidingDoorStatus.Animating) {
 			if (status == DoubleSlidingDoorStatus.Open) {
-				if (objectsOnDoorArea == 0) {
-					StartCoroutine ("CloseDoors");
-				}
+				if (objectsOnDoorArea == 0) 
+				{
+					if (distance < Vector3.Distance (player.transform.position, this.transform.position)){
+						Debug.Log(Vector3.Distance (player.transform.position, this.transform.position));
+						StartCoroutine ("CloseDoors");
+					}
+				}	
 			}
 		}
 	}
 
 	void OnTriggerEnter(Collider other) {
-		
-		if (status != DoubleSlidingDoorStatus.Animating) {
-			if (status == DoubleSlidingDoorStatus.Closed) {
-				StartCoroutine ("OpenDoors");
+		if (player.getCards().Contains(cardId))
+		{
+			if (status != DoubleSlidingDoorStatus.Animating) {
+				if (status == DoubleSlidingDoorStatus.Closed) {
+					StartCoroutine ("OpenDoors");
+				}
+			}
+
+			if (other.GetComponent<Collider>().gameObject.layer == LayerMask.NameToLayer ("Characters")) {
+				objectsOnDoorArea++;
 			}
 		}
-
-		if (other.GetComponent<Collider>().gameObject.layer == LayerMask.NameToLayer ("Characters")) {
-			objectsOnDoorArea++;
-		}
+		
 	}
 
 	void OnTriggerStay(Collider other) {
-		//DoOpenDoor();
+		if (player.getCards().Contains(cardId))
+		{
+			DoOpenDoor();
+		}
 	}
 
 	void OnTriggerExit(Collider other) {
@@ -156,13 +170,17 @@ public class DoubleSlidingDoorController : MonoBehaviour {
 	//	Forced door closing
 	public bool DoCloseDoor () {
 
-		if (status != DoubleSlidingDoorStatus.Animating) {
-			if (status == DoubleSlidingDoorStatus.Open) {
-				StartCoroutine ("CloseDoors");
-				return true;
+		if (distance < Vector3.Distance (player.transform.position, this.transform.position))
+		{
+			if (status != DoubleSlidingDoorStatus.Animating) {
+				if (status == DoubleSlidingDoorStatus.Open) {
+					StartCoroutine ("CloseDoors");
+					return true;
+				}
 			}
-		}
 
+			return false;
+		}
 		return false;
 	}
 }

@@ -20,12 +20,12 @@ public class CameraScript : MonoBehaviour
     {
         yaw += speedH * Input.GetAxis("Mouse X");
         pitch -= speedV * Input.GetAxis("Mouse Y");
-
+        /*
         yaw = Mathf.Clamp(yaw, -90f, 90f);
         //the rotation range
         pitch = Mathf.Clamp(pitch, -60f, 90f);
         //the rotation range
-
+        */
         transform.eulerAngles = new Vector3(pitch, yaw, 0.0f);
     }
 }

@@ -8,4 +8,5 @@ public class Interactable : MonoBehaviour
     {
         
     }
+    public virtual string getId() => "id";
 }

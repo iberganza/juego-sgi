@@ -9809,6 +9809,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e66d2afc7353f4852ba309a0d0c785f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  cardId: 
   halfDoorLeftTransform: {fileID: 928525741}
   halfDoorRightTransform: {fileID: 1262995958}
   slideDistance: 0.88
@@ -15861,6 +15863,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e66d2afc7353f4852ba309a0d0c785f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 1168319059}
+  cardId: Red
   halfDoorLeftTransform: {fileID: 1406989278}
   halfDoorRightTransform: {fileID: 641024215}
   slideDistance: 0.88
@@ -18314,6 +18318,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e66d2afc7353f4852ba309a0d0c785f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  cardId: 
   halfDoorLeftTransform: {fileID: 1356988870}
   halfDoorRightTransform: {fileID: 1499317380}
   slideDistance: 0.88
@@ -18971,6 +18977,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e66d2afc7353f4852ba309a0d0c785f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  cardId: 
   halfDoorLeftTransform: {fileID: 1972204202}
   halfDoorRightTransform: {fileID: 798376435}
   slideDistance: 0.88
@@ -25497,6 +25505,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4715545187306412, guid: eaf00e58f8a484c37bef75eb300e4645, type: 3}
   m_PrefabInstance: {fileID: 994885718}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &994948153 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7199023377054565623, guid: 1d7d78010276e3746908af98d171aac0, type: 3}
+  m_PrefabInstance: {fileID: 7199023377855253874}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &994948158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 994948153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2961144c405c5ec4d922bb5965c9a068, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: Red
 --- !u!1001 &998312352
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29011,6 +29037,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactionDistance: 0
+  deltaTime: 2
 --- !u!65 &1168319062
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -41400,7 +41427,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1732758078}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec82b01ed20028940bf2aa224a3cb468, type: 3}
+  m_Script: {fileID: 11500000, guid: f2a0f8a20f9fd624099f1e2222763b73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speedH: 2
