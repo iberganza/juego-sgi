@@ -69,10 +69,7 @@ public class DoubleSlidingDoorController : MonoBehaviour {
 			if (status == DoubleSlidingDoorStatus.Open) {
 				if (objectsOnDoorArea == 0) 
 				{
-					if (distance < Vector3.Distance (player.transform.position, this.transform.position)){
-						Debug.Log(Vector3.Distance (player.transform.position, this.transform.position));
-						StartCoroutine ("CloseDoors");
-					}
+					StartCoroutine ("CloseDoors");
 				}	
 			}
 		}
@@ -86,12 +83,11 @@ public class DoubleSlidingDoorController : MonoBehaviour {
 					StartCoroutine ("OpenDoors");
 				}
 			}
-
-			if (other.GetComponent<Collider>().gameObject.layer == LayerMask.NameToLayer ("Characters")) {
-				objectsOnDoorArea++;
+			
+		}	
+		if (other.GetComponent<Collider>().gameObject.layer == LayerMask.NameToLayer ("Characters")) {
+					objectsOnDoorArea++;
 			}
-		}
-		
 	}
 
 	void OnTriggerStay(Collider other) {
@@ -170,17 +166,16 @@ public class DoubleSlidingDoorController : MonoBehaviour {
 	//	Forced door closing
 	public bool DoCloseDoor () {
 
-		if (distance < Vector3.Distance (player.transform.position, this.transform.position))
-		{
-			if (status != DoubleSlidingDoorStatus.Animating) {
-				if (status == DoubleSlidingDoorStatus.Open) {
-					StartCoroutine ("CloseDoors");
-					return true;
-				}
-			}
 
-			return false;
+		if (status != DoubleSlidingDoorStatus.Animating) {
+			if (status == DoubleSlidingDoorStatus.Open) {
+				StartCoroutine ("CloseDoors");
+				return true;
+			}
 		}
+
+		return false;
+		
 		return false;
 	}
 }

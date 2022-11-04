@@ -30,16 +30,14 @@ public class InteractPlayer : MonoBehaviour
             if (hitInfo.collider.gameObject.GetComponent<Interactable>() != null)
             {
                 lastHit = hitInfo.collider.gameObject;
-                if (color == Color.clear)
+                if (hitInfo.collider.gameObject.GetComponent<Renderer>().material.GetColor("_Color") != Color.white)
                 {
                     color = hitInfo.collider.gameObject.GetComponent<Renderer>().material.color;
-                    Debug.Log(cards.Contains("Red"));
                 }
                 if (Time.time - startTimer >= deltaTime)
                 {
                     cards.Add(hitInfo.transform.GetComponent<Interactable>().getId());
                     hitInfo.transform.GetComponent<Interactable>().Interact();
-                    Debug.Log(cards.Contains("Red"));
                 }else
                 {
                     if(startTimer == null)
@@ -62,11 +60,14 @@ public class InteractPlayer : MonoBehaviour
         }else
         {
             startTimer = null;
+            lastHit = null;
+            color = Color.clear;
         }
     }
     private void HighlightObject(RaycastHit hitInfo)
     {
-        hitInfo.collider.gameObject.GetComponent<Renderer>().material.color = Color.yellow;
+        hitInfo.collider.gameObject.GetComponent<Renderer>().material.color = Color.white;
     }
+
     public HashSet<string> getCards() => cards;
 }
