@@ -23,12 +23,12 @@ public class TeleportBase : MonoBehaviour
         renderer.material.color = Color.white;
     }*/
 
-    private void OnPointerEnter()
+    private void OnGazeEnter()
     {
-        renderer.material.color = Color.red;
+        renderer.material.color  = Color.white;
     }
 
-    private void OnPointerExit()
+    private void OnGazeExit()
     {
         renderer.material.color = Color.white;
     }
